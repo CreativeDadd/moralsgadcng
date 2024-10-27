@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #006400; /* Dark green */
+    color: white;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-links a:hover {
+    color: #FFD700; /* Golden yellow for hover effect */
+  }
+  
+/* Hero Section */
+.hero {
+  background: linear-gradient(to left, rgba(0, 100, 0, 0.8), rgba(0, 0, 0, 0.3)),
+              url('cngTechnologyImg.webp') center/cover no-repeat;
+  color: white;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Golden yellow */
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    padding: 0.75rem 2rem;
+    background-color: #006400;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #004c00; /* Slightly darker green for hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+
+
+
+
+
+  /* Services Section */
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #006400; /* Dark green */
+  margin-bottom: 2rem;
+  position: relative;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: linear-gradient(to bottom right, #006400, #00b300);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffd700; /* Golden yellow */
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Keyframes for title fade-in */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Benefits Section */
+.benefits-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #006400;
+  margin-bottom: 2rem;
+  position: relative;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  color: #006400;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+ 
+
+
+
+/* The Icons for benefits */
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.icon {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+.icon {
+  width: 64px;
+  height: 64px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
