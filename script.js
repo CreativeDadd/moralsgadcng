@@ -56,9 +56,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-
-
 // Show button based on the current page
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 const heroPage = window.location.pathname === '/'; // Adjust the condition for your hero page
@@ -82,4 +79,7 @@ function scrollToTop() {
 // Event listeners
 window.addEventListener('scroll', toggleScrollToTopButton);
 scrollToTopBtn.addEventListener('click', scrollToTop);
+
+
+
 
