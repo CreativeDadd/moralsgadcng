@@ -44,3 +44,13 @@ window.addEventListener('scroll', () => {
       }
   });
 });
+
+
+// Scroll Animation for Footer
+window.addEventListener('scroll', () => {
+  const footer = document.querySelector('.footer');
+  const footerPosition = footer.getBoundingClientRect().top;
+  if (footerPosition < window.innerHeight) {
+      footer.classList.add('visible');
+  }
+});
