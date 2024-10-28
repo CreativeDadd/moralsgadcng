@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="32" fill="#4CAF50" />
+
+  <!-- Gear Outline -->
+  <path d="M32 24L36 22L39 24L40 28L44 30L42 34L44 38L40 40L39 44L36 46L32 44L28 46L25 44L24 40L20 38L22 34L20 30L24 28L25 24L28 22L32 24Z" fill="white" stroke="#4CAF50" stroke-width="2" />
+
+  <!-- Heart Shape Inside Gear -->
+  <path d="M32 32C30.5 30 28 28.5 28 26C28 24 29.5 22.5 32 24C34.5 22.5 36 24 36 26C36 28.5 33.5 30 32 32Z" fill="#FFD700"/>
+</svg>
