@@ -54,3 +54,32 @@ window.addEventListener('scroll', () => {
       footer.classList.add('visible');
   }
 });
+
+
+
+
+
+// Show button based on the current page
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+const heroPage = window.location.pathname === '/'; // Adjust the condition for your hero page
+
+function toggleScrollToTopButton() {
+  if (window.scrollY > 300 && !heroPage) {
+    scrollToTopBtn.style.display = 'flex'; // Show the button
+  } else {
+    scrollToTopBtn.style.display = 'none'; // Hide the button
+  }
+}
+
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
+
+// Event listeners
+window.addEventListener('scroll', toggleScrollToTopButton);
+scrollToTopBtn.addEventListener('click', scrollToTop);
+
